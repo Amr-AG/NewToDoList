@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS\learnStyle.css" />
+    <title>ToDoList</title>
+  </head>
+  <body style="background-color: #202020; color: #ffffff">
+    <div class="container">
+      <form action="">
+        <input
+          class="typeTask"
+          type="text"
+          placeholder="Type Your Task"
+          value=""
+        />
+        <input class="addTask" type="submit" value="Add Task" />
+      </form>
+    </div>
+    <div class="containerTasks"></div>
+    <audio id="doneSound" src="Audio\correct.mp3" preload="auto"></audio>
+    <audio id="undoSound" src="Audio\Undo.mp3" preload="auto"></audio>
+    <audio id="deleteSound" src="Audio\Delete Sound.mp3" preload="auto"></audio>
+    <script src="JS\learn.js"></script>
+  </body>
+</html>
