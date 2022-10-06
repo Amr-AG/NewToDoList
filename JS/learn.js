@@ -55,10 +55,9 @@ function createDiva(arrayTasks) {
     console.log(newTask);
 
     //create Input for content task
-    let taskContent = document.createElement("input");
-    taskContent.readOnly = true;
+    let taskContent = document.createElement("span");
     taskContent.className = "taskContent";
-    taskContent.value = task.title;
+    taskContent.innerText = task.title;
     newTask.appendChild(taskContent);
 
     // Create done Button For done tasks Content
@@ -100,9 +99,10 @@ function createDiva(arrayTasks) {
       );
     });
 
-    let clearAll = document.createElement("span");
+    let clearAll = document.createElement("input");
+    clearAll.type = "submit";
+    clearAll.value = "Clear All";
     clearAll.className = "clearAll";
-    clearAll.innerText = "Clear All";
     tasksContainer.appendChild(clearAll);
     if (newTask.innerHTML != "") {
       clearAll.style.display = "block";

@@ -118,7 +118,7 @@ input:focus {
 
 .delet,
 .done {
-  width: 100px;
+  width: 90px;
   padding: 10px 5px;
   text-align: center;
   cursor: pointer;
@@ -137,26 +137,27 @@ input:focus {
   color: #bc9c76c7;
 }
 .clearAll {
-  width: fit-content;
-  padding: 10px 5px;
-  text-align: center;
+  width: 40%;
   cursor: pointer;
   background: linear-gradient(45deg, #181818, #3f3f3fa6);
-  color: #ff361fc9;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.372);
+  color: #f85b40;
+  box-shadow: 0px 0px 5px 0px;
   font-weight: bold;
   font-size: 16px;
-  border-radius: 5px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
+  margin: auto;
   margin: auto;
   position: absolute;
-  bottom: -40px;
+  bottom: -50px;
   display: none;
 }
-
-.delet:hover,
-.done:hover,
 .clearAll:hover {
+  transition: 0.5s;
+  transform: translate3d(0px, -3px, 5px);
+  box-shadow: 0px 5px 8px 0px;
+}
+.delet:hover,
+.done:hover {
   transition: 0.5s;
   transform: translate3d(0px, -2px, 5px, 5px);
   box-shadow: 0px 5px 8px 0px #000;
@@ -174,10 +175,11 @@ input:focus {
   }
   .containerTasks {
     flex-wrap: wrap;
-    padding: 5px 10px;
+    padding: 5px 15px;
   }
 
   .newTask {
+    flex-wrap: wrap;
     padding: 10px 5px;
   }
   .typeTask {
@@ -191,15 +193,20 @@ input:focus {
   }
   .taskContent {
     font-size: 16px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
   }
   .done,
   .delet {
     padding: 8px 0;
     font-size: 12px;
-    margin: 0 5px;
+    margin: 0 15px;
   }
   .clearAll {
     font-size: 13px;
+    width: 83%;
   }
 }
 
